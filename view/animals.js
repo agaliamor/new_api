@@ -10,9 +10,9 @@ const pageAnimals = `
 <body>
   <h1>Животные</h1>
   <ul>
-    <li>Единорог</li>
-    <li>Кошка</li>
-    <li>Собака</li>
+    <li>Сурикаты</li>
+    <li>Кошки</li>
+    <li>Собаки</li>
   </ul>
 </body>
 </html>

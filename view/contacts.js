@@ -8,7 +8,7 @@ const pageContacts = `
   <title>Document</title>
 </head>
 <body>
-  <h1>Контакты</h1>
+  <h1>Как связаться с нами?</h1>
   <ul>
     <li>Буба 88005553535</li>
     <li>Биба 88005553535</li>
