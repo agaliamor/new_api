@@ -1,8 +1,7 @@
-const { request } = require("express");
+// const { request } = require("express");
 const express = require("express")
 const bodyParser = require("body-parser")
 const app = express();
-
 
 const pageContacts = require("./view/contacts")
 const pageAnimals = require("./view/animals")
@@ -31,6 +30,6 @@ app.get('/toys', (req, res) => {
     res.send(pageToys)
 })
 
-app.listen(8001, () => {
-    console.log("Сервер запущен на порту 8001")
+app.listen(8000, () => {
+    console.log("Сервер запущен на порту 8000")
 })
