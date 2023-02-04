@@ -1,19 +1,18 @@
+const header = require('../components/header')
+const head = require('../components/head')
+const footer = require('../components/footer')
+
 const pageContacts = `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+${head('Контакты')}
 <body>
+  ${header}
   <h1>Как связаться с нами?</h1>
   <ul>
     <li>Буба 88005553535</li>
     <li>Биба 88005553535</li>
     <li>Боба 88005553535</li>
   </ul>
+  ${footer}
 </body>
 </html>
 `

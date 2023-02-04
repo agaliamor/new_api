@@ -1,14 +1,20 @@
-// const { request } = require("express");
+const { request } = require("express");
 const express = require("express")
 const bodyParser = require("body-parser")
 const app = express();
 
-const pageContacts = require("./view/contacts")
-const pageAnimals = require("./view/animals")
-const pageToys = require("./view/toys")
-const pageFood = require("./view/food")
+const pageContacts = require("./view/contacts");
+const pageAnimals = require("./view/pages/animals");
+const pageToys = require("./view/toys");
+const pageFood = require("./view/food");
+const main = require("./view/main");
 
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(express.static(__dirname + '/public')); 
+
+app.get('/', (req, res) => {
+    response.send(main)
+})
 
 app.get('/contacts', (req, res) => {
     console.log(req.headers)
